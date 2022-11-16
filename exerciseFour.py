@@ -1,7 +1,12 @@
-number = int(
-    input(" Insira um valor inteiro para verificar se o valor é par: "))
-contador = 0
+number = int(input(" Insira um valor inteiro para soma: "))
+def eSomar(value):
+    counter = 1
+    sumValues = 0
+    while counter < value:
+        sumValues = sumValues + counter
+        print(sumValues)
+        counter += 1
+    print("Essa é a soma do valor digitado: ", sumValues)
 
-while contador < number:
-    print(f'Valor do contador é {contador + contador}')
-    contador += 1
+
+eSomar(number)
